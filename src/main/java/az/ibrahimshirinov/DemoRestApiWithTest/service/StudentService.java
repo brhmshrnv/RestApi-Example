@@ -52,6 +52,7 @@ public class StudentService {
 
     public void delete(Long id) {
         log.info("Operation: Deleted student with id: {}",id);
+
         isExist(id);
         repository.deleteById(id);
     }
